@@ -1,0 +1,41 @@
+{
+  "props": {
+    "version": "1.1",
+    "author": "DumkinVD",
+    "description": "EyeSaver - приложение для сохранения глаз"
+  },
+  "components": {
+    "systemTray": {
+      "type": "script\\SystemTrayScript",
+      "x": 48,
+      "y": 176,
+      "props": {
+        "visible": "1",
+        "tooltip": "EyeSaver",
+        "icon": ".data/img/EyeSaver Icon.png",
+        "manualExit": false,
+        "alwaysShowing": false
+      }
+    },
+    "timerWait": {
+      "type": "script\\TimerScript",
+      "x": 48,
+      "y": 96,
+      "props": {
+        "interval": 1000,
+        "repeatable": true,
+        "autoStart": false
+      }
+    },
+    "timerMain": {
+      "type": "script\\TimerScript",
+      "x": 48,
+      "y": 16,
+      "props": {
+        "interval": 1200000,
+        "repeatable": true,
+        "autoStart": true
+      }
+    }
+  }
+}
